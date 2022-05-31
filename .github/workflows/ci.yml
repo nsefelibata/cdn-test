@@ -17,4 +17,4 @@ jobs:
           node-version: "12.x"
           cache: 'npm'
       - name: Running Test
-        run: npm run test.js
+        run: npm run test

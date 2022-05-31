@@ -1,0 +1,19 @@
+{
+  "name": "git-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "node run test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsefelibata/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsefelibata/test/issues"
+  },
+  "homepage": "https://github.com/nsefelibata/test#readme"
+}
