@@ -21,5 +21,6 @@ export default defineConfig({
     ],
     alias: {
         '@': pathResolve('./src')
-    }
+    },
+    base: 'https://nsefelibata.github.io/cdn-test/'
 })
