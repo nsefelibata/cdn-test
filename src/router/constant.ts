@@ -6,11 +6,6 @@ const routes: RouteRecordRaw[] = [
         redirect: '/',
         name: 'Layout',
         children: []
-    },
-    {
-        path: '/login',
-        name: 'Login',
-        component: () => import('@/views/login/login')
     }
 ]
 
