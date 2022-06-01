@@ -23,10 +23,10 @@ jobs:
       - name: Install And Bild
         run: |
           npm install
-          npm run build
+          npm run-script build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
-        width: 
+        with: 
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           folder: build # The folder the action should deploy.
