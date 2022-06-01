@@ -1,4 +1,4 @@
-name: CI_DEV
+name: GitHub Actions Build and Deploy Demo
 on:
   push:
     branches: [ dev ]
@@ -20,7 +20,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - name: Running Test
+      - name: Install And Bild
         run: |
           npm install
-          npm run-script test
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        width: 
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          folder: build # The folder the action should deploy.
