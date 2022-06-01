@@ -3,7 +3,10 @@ import { RouterView } from "vue-router"
 const App = defineComponent({
     setup() {
         return () => {
-            return <RouterView></RouterView>
+            return <>
+                <h1>俺是真滴佛了</h1>
+                <RouterView></RouterView>
+            </>
         }
     }
 })
