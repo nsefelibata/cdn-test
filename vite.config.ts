@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import copy from 'rollup-plugin-copy'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { createStyleImportPlugin, ElementPlusResolve } from 'vite-plugin-style-import'
 import viteComponents, { ElementPlusResolver } from 'vite-plugin-components'
@@ -17,6 +18,14 @@ export default defineConfig({
         }),
         createStyleImportPlugin({
           resolves: [ElementPlusResolve()]
+        }),
+        copy({
+            targets:[
+                {
+                    src: resolve('./public/404.html'),
+                    dest: resolve('./dist/404.html')
+                }
+            ]
         })
     ],
     alias: {
